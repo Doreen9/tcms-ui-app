@@ -1,0 +1,176 @@
+ <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+	aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header text-center" style="background-color: #36c7fe; color:white;">
+        <h4 class="modal-title w-100 font-weight-bold">Add Clients Form</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:white;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+           <label data-error="wrong" data-success="right" for="defaultForm-email">Name</label>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-map-marker prefix grey-text"></i>
+           <label data-error="wrong" data-success="right" for="defaultForm-pass">Description</label>
+          <input type="text-area" id="defaultForm-pass" class="form-control validate">
+        </div>
+      </div>
+      
+ 
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-secondary">Add Project</button>
+      </div>
+      </div>
+      </div>
+  </div>
+
+
+
+    <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Delete Project</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <p> Are you sure you want to delete this project?</p>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-danger">Delete Project</button>
+      </div>
+      </div>
+      </div>
+    </div>
+
+
+
+
+<section class="page-section" id="services">
+    <div class="container">
+    <div class="row" id="tab">
+	<div class="col-xl-3 col-sm-6 mb-3 " >
+	  <div class="card text-white bg-warning o-hidden h-100 ">
+	      <div class="card-body" style="font-weight: 400;">
+                <div class="mr-5"><a data-toggle="modal" data-target="#modalLoginForm" style="cursor: pointer;" > <i class="fas fa-plus prefix grey-text"></i> Add New Project</a></div>
+              </div>
+	  </div>
+      </div>
+    </div>
+    </div>
+  </section>
+        
+   
+      
+        <!-- Clients Table -->
+    
+  <div class="card mb-3 shadow p-3 mb-5 bg-white rounded" style="margin-top:-80px;">
+      <form class="form-inline md-form form-sm active-cyan-2 mt-2" style="margin-left:20px;">
+      <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search for a project"
+	aria-label="Search">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      </form>
+      <h2 id="clients" style="margin-top:20px;"> Projects Details</h2>
+      
+      <div class="card-body">
+	<div class="table-responsive">
+	     <table class="table table-striped">
+                <thead>
+                  <tr>
+                <th>#</th>
+                    <th>Name</th>
+                    <th>Project Description</th>
+                    <th>Option</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                </tfoot>
+                <tbody>
+                  <tr>
+					<td>1</td>
+                    <td>Project Almanac</td>
+                    <td>Tema</td>
+          
+                    <td><button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDelete"><i class="fas fa-trash"></i></button>
+					<button type="button" class="btn btn-success btn-sm"> <i class="fas fa-edit "></i></button>
+					<button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#modaldetails"><i class="fas fa-eye"></i></button></td>
+                  </tr>
+                  <tr>
+					  <td>2</td>
+                    <td>David Acquah</td>
+                    <td>Mallam</td>
+                    
+                    <td><button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDelete"><i class="fas fa-trash"></i></button>
+					<button type="button" class="btn btn-success btn-sm"> <i class="fas fa-edit "></i></button>
+					<button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#modaldetails"><i class="fas fa-eye"></i></button></td>
+                  </tr>
+                  <tr>
+					  <td>3</td>
+                    <td>Maame Yaa</td>
+                    <td>North Kaneshie</td>
+                    
+                    <td><button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDelete"><i class="fas fa-trash"></i></button>
+					<button type="button" class="btn btn-success btn-sm"> <i class="fas fa-edit "></i></button>
+					<button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#modaldetails"><i class="fas fa-eye"></i></button></td>
+                  </tr>
+                  <tr>
+					  <td>4</td>
+                    <td>Samuel Kwakye</td>
+                    <td>East Legon</td>
+                    
+                   <td><button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDelete"><i class="fas fa-trash"></i></button>
+					<button type="button" class="btn btn-success btn-sm"> <i class="fas fa-edit "></i></button>
+					<button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#modaldetails"><i class="fas fa-eye"></i></button></td>
+                  </tr>
+                  <tr>
+					  <td>5</td>
+                    <td>Franklin Luther</td>
+                    <td>Haatso</td>
+                    
+                    <td><button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDelete"><i class="fas fa-trash"></i></button>
+					<button type="button" class="btn btn-success btn-sm"> <i class="fas fa-edit "></i></button>
+					<button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#modaldetails"><i class="fas fa-eye"></i></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      
+      
+       <div class="modal fade" id="modaldetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+	  aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	  <div class="modal-content">
+	  <div class="modal-header text-center">
+	    <h4 class="modal-title w-100 font-weight-bold">Project details</h4>
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	    <span aria-hidden="true">&times;</span>
+	  </button>
+	  </div>
+	  <div class="modal-body mx-3">
+	    <div class="row">
+	      <div class="span2">
+		<img src="../assets/img/avatar.png"  style="width: 50%;" alt="" class="img-rounded">
+	    </div>
+	    <div class="span4">
+	    <blockquote>
+	     <h4 style="padding: 20px;">Project Almanac</h4>
+	    </blockquote>
+	    </div>
+	    </div>
+	    <div class="modal-footer d-flex justify-content-center">
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -8,7 +8,7 @@ import { UserserviceService } from '../userservice.service';
 })
 export class ClientsComponent implements OnInit {
 
-  private clients = [];
+  clients = [];
   constructor(private userService:UserserviceService){}
 
   listUsers() {

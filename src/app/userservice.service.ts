@@ -9,7 +9,7 @@ import { Client } from './client';
 })
 
 export class UserserviceService {
-  userUrl = 'http://customer-mgt-app.herokuapp.com/v1/api/clients'
+  userUrl = 'https://customer-mgt-app.herokuapp.com/v1/api/clients'
   constructor(private http: HttpClient) { }
 
   getUsers(): Observable<Client[]> {

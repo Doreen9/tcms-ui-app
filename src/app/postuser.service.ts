@@ -7,7 +7,7 @@ import { Client } from './client';
   providedIn: 'root'
 })
 export class PostuserService {
-userUrl = 'http://customer-mgt-app.herokuapp.com/v1/api/client'
+userUrl = 'https://customer-mgt-app.herokuapp.com/v1/api/client'
   constructor(private http: HttpClient) { }
 
   createUser(userObject): Observable<Client[]> {

@@ -1,0 +1,24 @@
+
+
+<section class="page-section text-center" id="services">
+    <div class="container">
+        <div class="row">
+        <div class="card col-md-8 offset-md-2 shadow p-3 bg-white rounded">
+            <div class="card-body">
+                    <p style="color: #0E9F21;">{{ msg }}</p>
+                   <h2>Adding clients Form</h2>
+                <form class="text-center border border-light p-5" [formGroup]="profileForm" (ngSubmit)="onSubmit()" >
+                    <input type="text" class="form-control mb-4" placeholder="Name" formControlName="client_name" required>
+                    <input type="text" class="form-control mb-4" placeholder="Address" formControlName="client_address" required>
+                    <input type="text" class="form-control mb-4" placeholder="Telephone" formControlName="client_telephone" required>
+                    <input type="text" class="form-control mb-4" placeholder="email" formControlName="client_email" required>
+                    <button class="btn btn-primary btn-lg" type="submit" [disabled]="!profileForm.valid" >Add client</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
